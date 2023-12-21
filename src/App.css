@@ -1,0 +1,101 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.App {
+  text-align: center;
+}
+
+body{
+  background-image: url("background.jpg");
+  background-size: 25%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+table tr td, table tr th {
+  background-color: rgba(4, 110, 0, 0.8) !important;
+  color: white !important;
+}
+
+td, th {
+  border-width: 4px !important;
+  border-color: whitesmoke;
+}
+
+.no-cell {
+  border: 0px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.g-cell {
+  background-color: rgba(69, 235, 152, 0.8) !important;
+}
+
+.n-cell {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.r-cell {
+  background-color: rgba(255, 0, 0, 0.8) !important;
+}
+
+.hover-highlight:hover {
+  background-color: rgba(255, 255, 0, 0.575) !important; /* Puedes ajustar el color según tus preferencias */
+  cursor: pointer !important; /* Cambia el cursor al pasar el ratón */
+}
+
+.hover-forever {
+  background-color: rgba(255, 255, 0, 0.575) !important; /* Puedes ajustar el color según tus preferencias */
+}
+
+input[type=radio].hide-radio {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textura-casino {
+  background: linear-gradient(135deg, #fec771 0%, #fd8d3c 100%);
+  color: #000000; /* Texto blanco para mayor contraste */
+  padding: 12px 24px; /* Aumentar el tamaño del botón */
+  font-size: 20px; /* Aumentar el tamaño del texto */
+  font-family: 'Georgia', serif; /* Estilizar el tipo de letra */
+  letter-spacing: 1px; /* Agregar espacio entre letras para mejorar la legibilidad */
+  border: 1px solid #fd8d3c; /* Borde para mayor contraste */
+  /* Otros estilos adicionales para la textura de casino */
+}
+
+/* Estilo adicional para resaltar el botón al pasar el ratón por encima */
+.textura-casino:hover {
+  background: linear-gradient(135deg, #fd8d3c 0%, #fec771 100%);
+}
