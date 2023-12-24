@@ -13,14 +13,8 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "userFiles",
+		"inputs": [],
+		"name": "results",
 		"outputs": [
 			{
 				"internalType": "string",

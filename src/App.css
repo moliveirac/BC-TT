@@ -14,6 +14,11 @@ body{
   pointer-events: none;
 }
 
+.App-logo-fast {
+  height: 40vmin;
+  pointer-events: none;
+}
+
 table tr td, table tr th {
   background-color: rgba(4, 110, 0, 0.8) !important;
   color: white !important;
@@ -60,6 +65,12 @@ input[type=radio].hide-radio {
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-fast {
+    animation: App-logo-spin-fast infinite 2s linear;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -83,6 +94,16 @@ input[type=radio].hide-radio {
     transform: rotate(360deg);
   }
 }
+
+@keyframes App-logo-spin-fast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .textura-casino {
   background: linear-gradient(135deg, #fec771 0%, #fd8d3c 100%);
